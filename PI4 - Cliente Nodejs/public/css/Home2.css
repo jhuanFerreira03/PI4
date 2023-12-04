@@ -1,0 +1,73 @@
+@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.styletexto{
+    width: 100%;
+    padding: 2px;
+    margin-top: -20px;
+    background-color: #267fdd;
+}
+.title{
+    margin-left: 80px;
+    color: white;
+}
+.suupon{
+    font-size: 40px;
+    color: white;
+}
+.btn{
+    position: relative;
+    width: 100%;
+   
+    border: none;
+    border-radius: 20px;
+   
+   
+}
+.btn2{
+   background-color: #4070f4;
+   width: 350px;
+   height: 50px;
+   margin: 40px;
+   border: none;
+   border-radius: 20px;
+   color: white;
+   font-size: 20px;
+}
+.caixa{
+
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+.sessao{
+    background-color: #7c9fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-end-start-radius: 20px;
+    border-end-end-radius:  20px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+}
+.duracao{
+    background-color: #7c9fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-end-start-radius: 20px;
+    border-end-end-radius:  20px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    padding: 15px;
+
+}
+.pstyle{
+    
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+.wowfadeInUp{
+    color: white;
+}

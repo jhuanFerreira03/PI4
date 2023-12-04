@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadados -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/js/front.js"></script>
+
+</head>
+<body>
+    <div class="styletexto">
+        <div class="title"><H1 class="suupon">SuppOn</H1></div>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Digite sua pesquisa...">
+        <button class="search-button">Pesquisar</button>
+    </div>
+
+    <div class="card-list">
+        <div class="card">
+            <img src="/img/p3.png" alt="Imagem 1">
+            <h3>Dr. Pedro</h3>
+            <p>Depressão</p>
+            <button class="start-button">Iniciar Conversa</button>
+        </div>
+
+        <div class="card">
+            <img src="/img/p1.png" alt="Imagem 2">
+            <h3>Dra. Alana</h3>
+            <p>Divórcio</p>
+            <button class="start-button">Iniciar Conversa</button>
+        </div>
+
+        <div class="card">
+            <img src="/img/p2.png" alt="Imagem 3">
+            <h3>Dr. Jorge</h3>
+            <p>Ansiedade</p>
+            <button class="start-button">Iniciar Conversa</button>
+        </div>
+    </div>
+
+    <ul class="menu">
+		<li title="home"><a class="menu-button home">menu</a></li>
+		<!-- Links para diferentes seções -->
+		<li title="Pesquisa"><a class="search" onclick="click_search()">Pesquisa</a></li>
+		<li title="Consultas"><a class="pencil" onclick="click_queries()">Consultas</a></li>
+		<li title="Pagamentos"><a class="active about" onclick="click_payments()">Pagamentos</a></li>
+		<li title="Contratos"><a class="archive" onclick="click_contracts()">Contratos</a></li>
+		<li title="bate-papo"><a class="contact" onclick="click_chat()">chat</a></li>
+	</ul>
+
+    <ul class="menu-bar">
+		<li><a href="#" class="menu-button">Menu</a></li>
+		<li><a onclick="click_home()">Início</a></li>
+		<li><a onclick="click_perfil()">Perfil</a></li>
+		<li><a href="Login.html">Sair</a></li>
+	</ul>
+
+    <div class="space"></div>
+    <div class="space2">
+        <footer data-stellar-background-ratio="5">
+            <div class="container">
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $(".menu-button").click(function(){
+                $(".menu-bar").toggleClass("open");
+            })
+        })
+    </script>
+</body>
+</html>

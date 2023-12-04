@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Usuário</title>
+  <link rel="stylesheet" href="/css/perfil.css">
+  <!-- Links para arquivos CSS -->
+  <link rel="stylesheet" href="/css/Home.css">
+  <link rel="stylesheet" href="/css/Home2.css">
+
+  <!-- Referência ao jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <!-- Links para diferentes estilos CSS -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" href="/css/owl.carousel.css">
+  <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+
+  <!-- Estilo principal da página -->
+  <link rel="stylesheet" href="/css/tooplate-style.css">
+  <script src="/js/front.js"></script>
+</head>
+<body>
+  <!-- Cabeçalho da página -->
+  <div class="styletexto">
+    <div class="title"><h1 class="suupon">SuppOn</h1></div>
+  </div>
+
+  <!-- Barra de menu -->
+  <ul class="menu">
+		<li title="home"><a class="menu-button home">menu</a></li>
+		<!-- Links para diferentes seções -->
+		<li title="Pesquisa"><a class="search" onclick="click_search()">Pesquisa</a></li>
+		<li title="Consultas"><a class="pencil" onclick="click_queries()">Consultas</a></li>
+		<li title="Pagamentos"><a class="active about" onclick="click_payments()">Pagamentos</a></li>
+		<li title="Contratos"><a class="archive" onclick="click_contracts()">Contratos</a></li>
+		<li title="bate-papo"><a class="contact" onclick="click_chat()">chat</a></li>
+	</ul>
+
+  <!-- Outra barra de menu -->
+  <ul class="menu-bar">
+		<li><a href="#" class="menu-button">Menu</a></li>
+		<li><a onclick="click_home()">Início</a></li>
+		<li><a onclick="click_perfil()">Perfil</a></li>
+		<li><a href="Login.html">Sair</a></li>
+	</ul>
+
+  <!-- Seção de perfil -->
+  <div class="profile-container">
+    <div class="profile-picture">
+      <img id="profile-image" src="/img/p1.png" alt="Foto do perfil">
+      <input type="file" id="image-input" accept="image/*" style="display: none;" onchange="previewImage()">
+    </div>
+    <div class="profile-info">
+      <h2>Alana Teixeira</h2>
+      <p>Email: <span id="email">ateixeira@example.com</span> <button onclick="editEmail()">Editar</button></p>
+      <p>Descrição: <span id="descricao">Essa é a minha descrição.</span> <button onclick="editDescricao()">Editar</button></p>
+      <p>Localização: <span id="localizacao">São Paulo, Brasil</span> <button onclick="editLocalizacao()">Editar</button></p>
+    </div>
+    <div class="profile-buttons">
+      <button onclick="openFileInput()">Editar foto</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $(".menu-button").click(function(){
+        $(".menu-bar").toggleClass("open");
+      });
+    });
+
+    function openFileInput() {
+      // Abre o diálogo para selecionar arquivo ao clicar no botão "Editar foto"
+      $("#image-input").click();
+    }
+
+    function previewImage() {
+      // Mostra a imagem selecionada no elemento de imagem
+      var input = document.getElementById('image-input');
+      var image = document.getElementById('profile-image');
+
+      var reader = new FileReader();
+      reader.onload = function(e) {
+        image.src = e.target.result;
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+
+    function editEmail() {
+      // Adicione sua lógica para editar o email aqui
+      var newEmail = prompt("Novo Email:");
+      if (newEmail !== null) {
+        $("#email").text(newEmail);
+      }
+    }
+
+    function editDescricao() {
+      // Adicione sua lógica para editar a descrição aqui
+      var newDescricao = prompt("Nova Descrição:");
+      if (newDescricao !== null) {
+        $("#descricao").text(newDescricao);
+      }
+    }
+
+    function editLocalizacao() {
+      // Adicione sua lógica para editar a localização aqui
+      var newLocalizacao = prompt("Nova Localização:");
+      if (newLocalizacao !== null) {
+        $("#localizacao").text(newLocalizacao);
+      }
+    }
+
+    function editProfile() {
+      // Adicione sua lógica para editar o perfil aqui
+    }
+
+    function logout() {
+      window.location.href = "Login.html";
+    }
+  </script>
+</body>
+</html>

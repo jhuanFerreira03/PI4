@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- Links para arquivos CSS -->
+	<link rel="stylesheet" href="/css/Home.css">
+	<link rel="stylesheet" href="/css/Home2.css">
+
+	<!-- Referência ao jQuery -->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script src="/js/front.js"></script>
+
+	<!-- Links para diferentes estilos CSS -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/css/animate.css">
+	<link rel="stylesheet" href="/css/owl.carousel.css">
+	<link rel="stylesheet" href="/css/owl.theme.default.min.css">
+
+	<!-- Estilo principal da página -->
+	<link rel="stylesheet" href="/css/tooplate-style.css">
+</head>
+<body>
+	<!-- Cabeçalho da página -->
+	<div class="styletexto" style="display: inline-block;">
+		<div class="title"><H1 class="suupon" style="cursor: pointer;" onclick="click_home()">SuppOn</H1></div>
+		<ul style="list-style: none; display: inline; text-align: right; padding-left: 90%;">
+			<li style="display: inline-block; text-decoration: none;">	
+			<span style="text-align: right; color: white; cursor: pointer;" onclick='click_login()'><h5>Login</h5></span> 
+			</li>
+			<li style="display: inline-block; text-decoration: none;"><span style="color: white;"><h5> | </h5></span></li>
+			<li style="display: inline-block; text-decoration: none;">
+			<span style="text-align: right; color: white; cursor: pointer;" onclick='click_cadastro()'><h5>Cadastre-se</h5></span>
+			</li>
+		</ul>
+	</div>
+	<div style="clear: both;"></div>
+	
+	<!-- Barra de menu -->
+	<ul class="menu">
+		<li title="home"><a class="menu-button home">menu</a></li>
+		<!-- Links para diferentes seções -->
+		<li title="Pesquisa"><a class="search" onclick="click_search()">Pesquisa</a></li>
+		<li title="Consultas"><a class="pencil" onclick="click_queries()">Consultas</a></li>
+		<li title="Pagamentos"><a class="active about" onclick="click_payments()">Pagamentos</a></li>
+		<li title="Contratos"><a class="archive" onclick="click_contracts()">Contratos</a></li>
+		<li title="bate-papo"><a class="contact" onclick="click_chat()">chat</a></li>
+	</ul>
+	
+	<!-- Outra barra de menu -->
+	<ul class="menu-bar">
+		<li><a href="#" class="menu-button">Menu</a></li>
+		<li><a onclick="click_home()">Início</a></li>
+		<li><a onclick="click_perfil()">Perfil</a></li>
+		<li><a href="Login.html">Sair</a></li>
+	</ul>
+	  
+	<!-- Seção sobre a aplicação -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="about-info">
+						<!-- Título e informações sobre a aplicação -->
+						<h2 class="wow fadeInUp" data-wow-delay="0.6s">Bem-vindo ao SuppOn </h2>
+						<div class="wow fadeInUp" data-wow-delay="0.8s">
+							<p class="black-text">Encontre Conforto e Orientação: Descubra o Caminho para o Bem-Estar Emocional</p>
+							<!-- Mais informações sobre a aplicação -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Seção sobre os profissionais -->
+	<section id="team" data-stellar-background-ratio="1">
+		<div class="container">
+			<div class="row">
+				<!-- Título e informações sobre buscar profissionais -->
+				<div class="col-md-6 col-sm-6">
+					<div class="about-info">
+						<h2 class="wow fadeInUp" data-wow-delay="0.1s">Buscar Profissionais</h2>
+					</div>
+				</div>
+				<!-- Informações sobre profissionais disponíveis -->
+				<div class="col-md-4 col-sm-6">
+					<div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+						<img src="/images/team-image1.jpg" class="img-responsive" alt="">
+						<!-- Detalhes de um profissional -->
+					</div>
+				</div>
+				<!-- Mais informações de outros profissionais -->
+			</div>
+		</div>
+	</section>
+
+	<!-- Botão para mostrar mais psicólogos -->
+	<div class="btn"><button class="btn2">Mostre-Me Mais Psicólogos</button></div>
+
+	<!-- Rodapé da página -->
+	<footer data-stellar-background-ratio="5">
+		<!-- Informações de contato e suporte -->
+		<div class="container">
+			<div class="row">
+				<!-- Detalhes de contato -->
+				<div class="col-md-4 col-sm-4">
+					<div class="footer-thumb"> 
+						<h4 class="wowfadeInUp" data-wow-delay="0.4s">Informações de contatos</h4>
+						<!-- Informações de contato e suporte -->
+					</div>
+				</div>
+				<!-- Mais informações de suporte -->
+			</div>
+			<!-- Texto de direitos autorais e links adicionais -->
+		</div>
+	</footer>
+
+	<!-- Script para controle do menu -->
+	<script>
+		$(document).ready(function(){
+			$(".menu-button").click(function(){
+				$(".menu-bar").toggleClass( "open" );
+			})
+		})
+	</script>
+</body>
+</html>

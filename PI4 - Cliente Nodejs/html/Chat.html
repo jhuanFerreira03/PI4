@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tela de Chat</title>
+
+     <link rel="stylesheet" href="/css/chat.css">
+     <link rel="stylesheet" href="/css/style.css">
+
+     
+     <link rel="stylesheet" href="/css/bootstrap.min.css">
+     <link rel="stylesheet" href="/css/font-awesome.min.css">
+     <link rel="stylesheet" href="/css/animate.css">
+     <link rel="stylesheet" href="/css/owl.carousel.css">
+     <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+     <script src="/js/front.js"></script>
+</head>
+
+<body>
+     <!-- Barra de menu -->
+     <ul class="menu">
+		<li title="home"><a class="menu-button home">menu</a></li>
+		<!-- Links para diferentes seções -->
+		<li title="Pesquisa"><a class="search" onclick="click_search()">Pesquisa</a></li>
+		<li title="Consultas"><a class="pencil" onclick="click_queries()">Consultas</a></li>
+		<li title="Pagamentos"><a class="active about" onclick="click_payments()">Pagamentos</a></li>
+		<li title="Contratos"><a class="archive" onclick="click_contracts()">Contratos</a></li>
+		<li title="bate-papo"><a class="contact" onclick="click_chat()">chat</a></li>
+	</ul>
+	  
+     <ul class="menu-bar">
+		<li><a href="#" class="menu-button">Menu</a></li>
+		<li><a onclick="click_home()">Início</a></li>
+		<li><a onclick="click_perfil()">Perfil</a></li>
+		<li><a href="Login.html">Sair</a></li>
+	</ul>
+
+     <!-- Outra barra de menu -->
+
+
+          <div class="chat-container">
+               <div class="chat-header">
+                    <h2>Chat Room</h2>
+               </div>
+               <div class="chat-messages">
+                    <div class="message">
+                         <span class="user">Cliente</span>
+                         <p class="text">Olá! Como você está?</p>
+                    </div>
+                    <div class="message sent">
+                         <span class="user">Você</span>
+                         <p class="text">Oi! Estou bem, obrigado!</p>
+                    </div>
+                    <div class="message">
+                         <span class="user">Cliente</span>
+                         <p class="text">Maravilha!!</p>
+                    </div>
+                    <div class="message">
+                         <span class="user">Cliente</span>
+                         <p class="text">Eu estava pensando em procurar aconselhamento sobre divórcio. Você tem
+                              alguma orientação?</p>
+                    </div>
+                    <div class="message sent">
+                         <span class="user">Você</span>
+                         <p class="text">Certamente, posso fornecer informações sobre os passos iniciais de um
+                              processo de divórcio. É importante considerar suas opções e buscar aconselhamento
+                              jurídico.</p>
+                    </div>
+                    <div class="message">
+                         <span class="user">Cliente</span>
+                         <p class="text">Obrigado! Quais são os documentos necessários para iniciar o processo?</p>
+                    </div>
+                    <div class="message sent">
+                         <span class="user">Você</span>
+                         <p class="text">Geralmente, você precisará de documentos como certidão de casamento,
+                              comprovante de renda, e informações sobre propriedades e filhos, se aplicável.
+                              Recomendo consultar um advogado para orientação personalizada.</p>
+                    </div>
+                    <!-- Adicione mais mensagens conforme necessário -->
+               </div>
+               <div class="chat-input">
+                    <input type="text" placeholder="Digite sua mensagem">
+                    <button>Enviar</button>
+               </div>
+          </div>
+
+     </body>
+     <script>
+          $(document).ready(function(){
+          $(".menu-button").click(function(){
+          $(".menu-bar").toggleClass( "open" );
+          })
+          })
+     </script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+  <!-- Definições de metadados -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Registro ou Cadastro em HTML CSS | CodingLab</title> 
+  <!-- Link para arquivo de estilo CSS -->
+  <link rel="stylesheet" href="/css/Login.css">
+  <script src="/js/front.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Título e cabeçalho do formulário -->
+    <h1>SuppOn</h1>
+    <h2>Entrada</h2>
+    <!-- Formulário de login -->
+    <form action="/form_login" method="post">
+      <!-- Campo para inserir e-mail -->
+      <div class="input-box">
+        <input name="email_log" id="email_log" type="text" placeholder="Digite seu e-mail" required>
+      </div>
+      <!-- Campo para inserir senha -->
+      <div class="input-box" >
+        <input name="password" id="pass" type="password" placeholder="Digite sua senha" required>
+      </div>
+      <!-- Botão de submissão do formulário -->
+      <div class="input-box button">
+        <input type="Submit" value="Entrar">
+      </div>
+      <!-- Mensagem para criar uma nova conta -->
+      <div class="text">
+        <h3>Não tem uma conta? <a style="text-decoration: none; cursor: pointer;" onclick="click_cadastro()">Cadastre-se</a></h3>
+      </div>
+    </form>
+  </div>
+  <script>
+
+  </script>
+</body>
+</html>

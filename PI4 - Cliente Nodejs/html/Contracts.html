@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+  
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css">
+     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+     <script src="/js/front.js"></script>
+
+</head>
+<body>
+    <div class="styletexto">
+		<div class="title"><H1 class="suupon">SuppOn</H1></div>
+	</div>
+	<ul class="menu">
+		<li title="home"><a class="menu-button home">menu</a></li>
+		<!-- Links para diferentes seções -->
+		<li title="Pesquisa"><a class="search" onclick="click_search()">Pesquisa</a></li>
+		<li title="Consultas"><a class="pencil" onclick="click_queries()">Consultas</a></li>
+		<li title="Pagamentos"><a class="active about" onclick="click_payments()">Pagamentos</a></li>
+		<li title="Contratos"><a class="archive" onclick="click_contracts()">Contratos</a></li>
+		<li title="bate-papo"><a class="contact" onclick="click_chat()">chat</a></li>
+	</ul>
+	  
+     <ul class="menu-bar">
+		<li><a href="#" class="menu-button">Menu</a></li>
+		<li><a onclick="click_home()">Início</a></li>
+		<li><a onclick="click_perfil()">Perfil</a></li>
+		<li><a href="Login.html">Sair</a></li>
+	</ul>
+      <footer data-stellar-background-ratio="5">
+        <div class="container">
+             <div class="row">
+    
+                  <div class="col-md-4 col-sm-4">
+                       <div class="footer-thumb"> 
+                            <h4 class="wowfadeInUp" data-wow-delay="0.4s">Informações de contatos</h4>
+                            <p class="wowfadeInUp">Entre em contato conosco para obter informações adicionais,
+                                 assistência ou suporte. Estamos aqui para ajudar e fornecer 
+                                 as informações necessárias para garantir a sua satisfação e 
+                                 resolver quaisquer dúvidas que possa ter. Sua satisfação é a
+                                  nossa prioridade, e estamos disponíveis para ajudar de todas
+                                   as maneiras possíveis. </p>
+    
+                            <div class="contact-info">
+                                 <p class="wowfadeInUp"><i class="fa fa-phone"></i> 010-070-0170</p>
+                                 <p class="wowfadeInUp"><i class="fa fa-envelope-o"></i> <a href="#">infoSuppOn@Gmail.com</a></p>
+                            </div>
+                       </div>
+                  </div>
+    
+                  <div class="col-md-4 col-sm-4"> 
+                       
+                  </div>
+    
+                  <div class="col-md-4 col-sm-4"> 
+                       <div class="footer-thumb">
+                            <div class="opening-hours">
+                                 <h4 class="wowfadeInUp" data-wow-delay="0.4s">Suporte</h4>
+                                 <p class="wowfadeInUp">Horários de atedimento.</p>
+                                 <p class="wowfadeInUp">Segunda-feira - Sexta-feira <span>06:00 - 22:00</span></p>
+                                 <p class="wowfadeInUp">Sábado <span>09:00 - 20:00</span></p>
+                                 <p class="wowfadeInUp">Domingo <span>Fechado</span></p>
+                                 
+                            </div> 
+    
+                            
+                       </div>
+                  </div>
+    
+                  <div class="col-md-12 col-sm-12 border-top">
+                       <div class="col-md-4 col-sm-6">
+                            <div class="copyright-text"> 
+                                 <p>Direitos Autorais &copy; 2023 SuppOn
+                                 
+                                 | Design: <a href="http://www.tooplate.com" target="_parent">Tooplate</a></p>
+                            </div>
+                       </div>
+                       <div class="col-md-6 col-sm-6">
+                            <div class="footer-link"> 
+                                <a href="#">Suporte</a>
+                                <a href="#">Sobre Nós</a>
+                                <a href="#">Política de Seguros</a>
+                                <a href="#">Carreiras</a>
+                            </div>
+                       </div>
+                       <div class="col-md-2 col-sm-2 text-align-center">
+                            <div class="angle-up-btn"> 
+                                <a href="#top" class="smoothScroll wow fadeInUp" data-wow-delay="1.2s"><i class="fa fa-angle-up"></i></a>
+                            </div>
+                       </div>   
+                  </div>
+                  
+             </div>
+        </div>
+    </footer>
+    
+</body>
+<script>
+	$(document).ready(function(){
+	$(".menu-button").click(function(){
+	$(".menu-bar").toggleClass( "open" );
+	})
+	})
+</script>
+</html>
